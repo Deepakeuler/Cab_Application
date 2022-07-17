@@ -1,4 +1,4 @@
-package Module1;
+package Model;
 
 public class Vehicle {
 	

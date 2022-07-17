@@ -1,4 +1,7 @@
-package Module1;
+package Service;
+import Model.*;
+import Service.*;
+
 import java.util.*;
 
 public class CabApplication {
@@ -89,11 +92,11 @@ public class CabApplication {
 	
 	public double findDistance(Location startLocation, Location driverLocation) {
 		// 
-		float x1 = startLocation.latitude;
-		float x2 = startLocation.longitude;
+		float x1 = startLocation.getLatitude();
+		float x2 = startLocation.getLongitude();
 		
-		float y1 = driverLocation.latitude;
-		float y2 = driverLocation.longitude;
+		float y1 = driverLocation.getLatitude();
+		float y2 = driverLocation.getLongitude();
 		
 		return Math.sqrt(Math.pow((x2 - x1),2)*1.0 + Math.pow((y2 - y1),2)*1.0) ;
 	}
